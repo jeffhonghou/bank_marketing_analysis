@@ -52,6 +52,7 @@ Now, we aim to compare the performance of the Logistic Regression model to our K
 | ----- | ---------- | -------------  | -----------   |
 |     |    |.     |.     |
 
+
 | Model                    | Train Time | Train Accuracy | Test Accuracy |
 |--------------------------|------------|----------------|----------------|
 | Logistic Regression model | 0.176481   | 0.911927       | 0.911022       |
@@ -71,6 +72,7 @@ Now that we have some basic models on the board, we want to try to improve these
 Using GridSearchCV to find best parameters for each model
 #### Step 11.5: Adjust your performance metric
 Adjust the performance metric for each model based on the GridSearchCV results from step 11.4
+
 | Model                    | Train Time | Train Accuracy | Test Accuracy |
 |--------------------------|------------|----------------|----------------|
 | Logistic Regression model | 0.289282   | 0.911168       | 0.912115       |
