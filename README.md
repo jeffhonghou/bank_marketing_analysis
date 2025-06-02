@@ -55,10 +55,10 @@ Now, we aim to compare the performance of the Logistic Regression model to our K
 
 | Model                    | Train Time | Train Accuracy | Test Accuracy |
 |--------------------------|------------|----------------|----------------|
-| Logistic Regression model | 0.176481   | 0.911927       | 0.911022       |
-| KNN algorithm             | 0.022400   | 0.928619       | 0.903010       |
-| Decision Tree             | 0.317930   | 1.000000       | 0.886380       |
-| SVM models                | 25.267971  | 0.856722       | 0.845472       |
+| Logistic Regression model | 0.201142   | 0.911927       | 0.911022       |
+| KNN algorithm             | 0.002884   | 0.928619       | 0.903010       |
+| Decision Tree             | 0.426489   | 1.000000       | 0.886380       |
+| SVM models                | 29.861710  | 0.856722       | 0.845472       |
 
 ### Problem 11: Improving the Model
 Now that we have some basic models on the board, we want to try to improve these.  Below, we list a few things to explore in this pursuit.
@@ -75,10 +75,10 @@ Adjust the performance metric for each model based on the GridSearchCV results f
 
 | Model                    | Train Time | Train Accuracy | Test Accuracy |
 |--------------------------|------------|----------------|----------------|
-| Logistic Regression model | 0.289282   | 0.911168       | 0.912115       |
-| KNN algorithm             | 0.015671   | 0.921335       | 0.908352       |
-| Decision Tree             | 0.189511   | 0.917329       | 0.915149       |
-| SVM models                | 27.640711  | 0.917451       | 0.909444       |
+| Logistic Regression model | 0.177844   | 0.911168       | 0.912115       |
+| KNN algorithm             | 0.005552   | 0.921335       | 0.908352       |
+| Decision Tree             | 0.080536   | 0.917329       | 0.915149       |
+| SVM models                | 16.340876  | 0.917451       | 0.909444       |
 #### Step 11.6: Print the coefficients of Logistic Regression
 | Feature                        | Coefficient  |
 |--------------------------------|--------------|
