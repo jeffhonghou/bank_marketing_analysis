@@ -80,9 +80,53 @@ Adjust the performance metric for each model based on the GridSearchCV results f
 | Decision Tree             | 0.189511   | 0.917329       | 0.915149       |
 | SVM models                | 27.640711  | 0.917451       | 0.909444       |
 #### Step 11.6: Print the coefficients of Logistic Regression
-
-## Comparison results
-The Decision Tree model offers the best performance in terms of test accuracy, while Logistic Regression strikes a good balance between speed and performance. KNN is suitable for extremely fast training needs, though it slightly underperforms on test accuracy. SVM may be less practical due to its high computational cost without a significant accuracy advantage.
+| Feature                        | Coefficient  |
+|--------------------------------|--------------|
+| month_mar                      | 1.908114     |
+| duration                       | 1.208996     |
+| euribor3m                      | 1.146090     |
+| cons.price.idx                 | 1.042454     |
+| poutcome_success               | 0.860618     |
+| month_aug                      | 0.857969     |
+| poutcome_nonexistent           | 0.411524     |
+| job_retired                    | 0.238156     |
+| month_sep                      | 0.233414     |
+| education_illiterate           | 0.232788     |
+| job_student                    | 0.165145     |
+| month_oct                      | 0.151400     |
+| education_university.degree    | 0.142633     |
+| month_jul                      | 0.131970     |
+| education_basic.6y            | 0.097044     |
+| job_unemployed                 | 0.073793     |
+| job_technician                 | 0.062629     |
+| month_dec                      | 0.046754     |
+| marital_single                 | 0.025181     |
+| education_unknown              | 0.006440     |
+| default_yes                    | -0.012886    |
+| education_professional.course  | -0.014774    |
+| education_high.school          | -0.026164    |
+| previous                       | -0.027446    |
+| marital_married                | -0.028211    |
+| education_basic.9y            | -0.034149    |
+| job_management                 | -0.052300    |
+| job_housemaid                  | -0.075455    |
+| marital_unknown                | -0.080225    |
+| nr.employed                    | -0.081497    |
+| job_services                   | -0.116146    |
+| job_entrepreneur               | -0.130887    |
+| pdays                          | -0.196642    |
+| job_blue-collar                | -0.200379    |
+| job_unknown                    | -0.273490    |
+| default_unknown                | -0.283657    |
+| job_self-employed              | -0.301383    |
+| month_jun                      | -0.396870    |
+| month_may                      | -0.524042    |
+| month_nov                      | -0.565595    |
+| contact_telephone              | -0.633846    |
+| emp.var.rate                   | -2.718989    |
 
 ## Findings
-March is the most effective month for running the bank marketing campaign, followed by August. In addition to timing, the top five features that most influence clients' acceptance of term deposits are: the duration of the last contact, the daily Euribor 3-month rate, the monthly consumer price index, and the outcome of the previous campaign—particularly if it was successful or did not exist. Therefore, future campaigns should strategically prioritize these factors to enhance overall efficiency.
+### Comparison results
+The Decision Tree model offers the best performance in terms of test accuracy, while Logistic Regression strikes a good balance between speed and performance. KNN is suitable for extremely fast training needs, though it slightly underperforms on test accuracy. SVM may be less practical due to its high computational cost without a significant accuracy advantage.
+### Next steps and recommendations
+March is the most effective month for running the bank marketing campaign, followed by August. In addition to timing, the top five features that most influence clients' acceptance of term deposits are: the duration of the last contact, the daily Euribor 3-month rate, the monthly consumer price index, and the outcome of the previous campaign—particularly if it was successful, and the employment variation rate - quarterly indicator. Therefore, future campaigns should strategically prioritize these factors to enhance overall efficiency.
