@@ -36,7 +36,7 @@ With your data prepared, split it into a train and test set.
 ### Problem 7: A Baseline Model
 Before we build our first model, we want to establish a baseline.  What is the baseline performance that our classifier should aim to beat?
 #### Step 7.1: What is the baseline performance that our classifier should aim to beat?
-Our classifier should aim to achieve significantly better performance than this baseline, particularly in terms of precision, recall, and F1-score for the positive class (y = yes/1), which represents the key outcome of interest.
+Based on the output, a naive classifier that always predicts class 0 (the majority class) would achieve an accuracy of 88.73%. Thus, 88.73% is the performance my classifier should aim to beat. 
 
 ### Problem 8: A Simple Model
 Use Logistic Regression to build a basic model on your data. 
